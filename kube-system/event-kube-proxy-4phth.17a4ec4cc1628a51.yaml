@@ -1,0 +1,26 @@
+apiVersion: v1
+count: 303
+eventTime: null
+firstTimestamp: "2023-12-28T06:52:53Z"
+involvedObject:
+  apiVersion: v1
+  kind: Pod
+  name: kube-proxy-4phth
+  namespace: kube-system
+  resourceVersion: "721"
+  uid: 04eb09f2-3488-472f-afbd-d2d1ca3e1699
+kind: Event
+lastTimestamp: "2023-12-28T13:08:49Z"
+message: 'Nameserver limits were exceeded, some nameservers have been omitted, the
+  applied nameserver line is: 10.84.5.101 172.21.200.60 66.129.233.81'
+metadata:
+  creationTimestamp: "2023-12-28T06:52:54Z"
+  name: kube-proxy-4phth.17a4ec4cc1628a51
+  namespace: kube-system
+reason: DNSConfigForming
+reportingComponent: kubelet
+reportingInstance: sharmag-k8s-dpdk-kubelet1-lqqpff.englab.juniper.net
+source:
+  component: kubelet
+  host: sharmag-k8s-dpdk-kubelet1-lqqpff.englab.juniper.net
+type: Warning

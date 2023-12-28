@@ -1,7 +1,7 @@
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
-  creationTimestamp: "2023-12-27T09:46:11Z"
+  creationTimestamp: "2023-12-28T06:53:10Z"
   labels:
     k8s-app: calico-kube-controllers
   name: calico-kube-controllers

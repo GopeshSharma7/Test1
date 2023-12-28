@@ -5,7 +5,7 @@ metadata:
     meta.helm.sh/release-name: jcnr
     meta.helm.sh/release-namespace: default
     pv.kubernetes.io/bound-by-controller: "yes"
-  creationTimestamp: "2023-12-27T09:47:46Z"
+  creationTimestamp: "2023-12-28T06:54:45Z"
   finalizers:
   - kubernetes.io/pv-protection
   labels:
@@ -19,10 +19,10 @@ spec:
   claimRef:
     apiVersion: v1
     kind: PersistentVolumeClaim
-    name: conf-kube-crpd-worker-sts-0
+    name: conf-kube-crpd-worker-sts-2
     namespace: jcnr
-    resourceVersion: "1265"
-    uid: 261631fc-dc39-4449-98a7-7d606265d8a5
+    resourceVersion: "1261"
+    uid: d296bf9f-7e89-4fcc-810a-c855ab09a244
   hostPath:
     path: /etc/crpd
     type: ""

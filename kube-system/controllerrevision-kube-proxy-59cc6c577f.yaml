@@ -65,7 +65,7 @@ kind: ControllerRevision
 metadata:
   annotations:
     deprecated.daemonset.template.generation: "1"
-  creationTimestamp: "2023-12-27T09:43:05Z"
+  creationTimestamp: "2023-12-28T06:50:07Z"
   labels:
     controller-revision-hash: 59cc6c577f
     k8s-app: kube-proxy
@@ -77,5 +77,5 @@ metadata:
     controller: true
     kind: DaemonSet
     name: kube-proxy
-    uid: 93b39e05-fad4-432e-83e6-7ba4775fbf4b
+    uid: 5d266490-57b5-434e-9627-16c716d1e028
 revision: 1

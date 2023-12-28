@@ -293,7 +293,7 @@ metadata:
   annotations:
     meta.helm.sh/release-name: jcnr
     meta.helm.sh/release-namespace: default
-  creationTimestamp: "2023-12-27T09:47:47Z"
+  creationTimestamp: "2023-12-28T06:54:45Z"
   labels:
     controller.kubernetes.io/hash: 85c4564ff4
     k8s-app: kube-crpd-worker
@@ -305,5 +305,5 @@ metadata:
     controller: true
     kind: StatefulSet
     name: kube-crpd-worker-sts
-    uid: f046b808-435e-4945-96ca-975a05920ac5
+    uid: c2d15b4c-71d9-427e-8420-22639b948f28
 revision: 1

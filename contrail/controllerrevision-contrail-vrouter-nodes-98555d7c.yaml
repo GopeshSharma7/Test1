@@ -472,7 +472,7 @@ kind: ControllerRevision
 metadata:
   annotations:
     deprecated.daemonset.template.generation: "1"
-  creationTimestamp: "2023-12-27T09:47:54Z"
+  creationTimestamp: "2023-12-28T06:54:53Z"
   labels:
     app: contrail-vrouter-nodes
     controller-revision-hash: 98555d7c
@@ -484,5 +484,5 @@ metadata:
     controller: true
     kind: DaemonSet
     name: contrail-vrouter-nodes
-    uid: 0b222eeb-a6d9-407a-9b22-0c64311dd65c
+    uid: c6c9e68a-b235-4ea6-b957-398f4fc6d8e6
 revision: 1

@@ -1,0 +1,56 @@
+addressType: IPv4
+apiVersion: discovery.k8s.io/v1
+endpoints:
+- addresses:
+  - 10.244.186.193
+  conditions:
+    ready: false
+    serving: false
+    terminating: false
+  nodeName: sharmag-k8s-master-lqqpff.englab.juniper.net
+  targetRef:
+    kind: Pod
+    name: coredns-56bc94896d-9j6nw
+    namespace: kube-system
+    uid: 74c98d5d-3071-4c7f-9e1e-86ba5ff4f82e
+- addresses:
+  - 10.244.186.194
+  conditions:
+    ready: false
+    serving: false
+    terminating: false
+  nodeName: sharmag-k8s-master-lqqpff.englab.juniper.net
+  targetRef:
+    kind: Pod
+    name: coredns-56bc94896d-wcbh5
+    namespace: kube-system
+    uid: a56ea941-cd1b-4af8-8a3f-e2b5b04f3d13
+kind: EndpointSlice
+metadata:
+  creationTimestamp: "2023-12-28T06:50:07Z"
+  generateName: kube-dns-
+  labels:
+    endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+    k8s-app: kube-dns
+    kubernetes.io/cluster-service: "true"
+    kubernetes.io/name: CoreDNS
+    kubernetes.io/service-name: kube-dns
+  name: kube-dns-7d6ps
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Service
+    name: kube-dns
+    uid: ea6c1f4e-17fa-4381-8fdd-b97fae64dae2
+ports:
+- name: metrics
+  port: 9153
+  protocol: TCP
+- name: dns
+  port: 53
+  protocol: UDP
+- name: dns-tcp
+  port: 53
+  protocol: TCP

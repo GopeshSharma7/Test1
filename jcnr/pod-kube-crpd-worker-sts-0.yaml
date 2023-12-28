@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  creationTimestamp: "2023-12-27T09:47:47Z"
+  creationTimestamp: "2023-12-28T06:54:45Z"
   generateName: kube-crpd-worker-sts-
   labels:
     apps.kubernetes.io/pod-index: "0"
@@ -16,7 +16,7 @@ metadata:
     controller: true
     kind: StatefulSet
     name: kube-crpd-worker-sts
-    uid: f046b808-435e-4945-96ca-975a05920ac5
+    uid: c2d15b4c-71d9-427e-8420-22639b948f28
 spec:
   affinity:
     nodeAffinity:
@@ -116,7 +116,7 @@ spec:
     - mountPath: /var/crash
       name: crash
     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-m7bhs
+      name: kube-api-access-h6tzm
       readOnly: true
   - command:
     - /telemetry-exporter
@@ -152,7 +152,7 @@ spec:
     - mountPath: /etc/secrets
       name: secrets
     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-m7bhs
+      name: kube-api-access-h6tzm
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
@@ -184,7 +184,7 @@ spec:
     - mountPath: /opt/jcnr-custom-config
       name: jcnr-custom-config
     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-m7bhs
+      name: kube-api-access-h6tzm
       readOnly: true
   - env:
     - name: NODE_IP
@@ -250,9 +250,9 @@ spec:
     - mountPath: /etc/localtime
       name: host-time
     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-m7bhs
+      name: kube-api-access-h6tzm
       readOnly: true
-  nodeName: sharmag-k8s-dpdk-kubelet1-pnad30.englab.juniper.net
+  nodeName: sharmag-k8s-dpdk-kubelet1-lqqpff.englab.juniper.net
   preemptionPolicy: PreemptLowerPriority
   priority: 0
   restartPolicy: Always
@@ -327,7 +327,7 @@ spec:
       name: telemetry-exporter-overrides-configmap
       optional: true
     name: telemetry-exporter-overrides
-  - name: kube-api-access-m7bhs
+  - name: kube-api-access-h6tzm
     projected:
       defaultMode: 420
       sources:

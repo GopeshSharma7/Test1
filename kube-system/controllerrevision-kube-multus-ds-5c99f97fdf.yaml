@@ -88,7 +88,7 @@ kind: ControllerRevision
 metadata:
   annotations:
     deprecated.daemonset.template.generation: "1"
-  creationTimestamp: "2023-12-27T09:47:05Z"
+  creationTimestamp: "2023-12-28T06:54:03Z"
   labels:
     app: multus
     controller-revision-hash: 5c99f97fdf
@@ -102,5 +102,5 @@ metadata:
     controller: true
     kind: DaemonSet
     name: kube-multus-ds
-    uid: 7fe05ca2-5ee9-4a68-ad36-19f6a4e5b981
+    uid: 0693ce01-b8ea-4fbc-bcc3-648b81c6a122
 revision: 1

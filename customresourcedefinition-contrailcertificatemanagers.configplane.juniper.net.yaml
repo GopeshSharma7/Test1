@@ -3,7 +3,7 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.8.0
-  creationTimestamp: "2023-12-27T09:47:51Z"
+  creationTimestamp: "2023-12-28T06:54:50Z"
   name: contrailcertificatemanagers.configplane.juniper.net
 spec:
   conversion:

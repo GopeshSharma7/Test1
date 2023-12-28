@@ -1,0 +1,15 @@
+apiVersion: coordination.k8s.io/v1
+kind: Lease
+metadata:
+  creationTimestamp: "2023-12-28T06:49:53Z"
+  name: sharmag-k8s-master-lqqpff.englab.juniper.net
+  namespace: kube-node-lease
+  ownerReferences:
+  - apiVersion: v1
+    kind: Node
+    name: sharmag-k8s-master-lqqpff.englab.juniper.net
+    uid: 898d04ae-4b0e-4fd7-bc7f-d0b2e25b861f
+spec:
+  holderIdentity: sharmag-k8s-master-lqqpff.englab.juniper.net
+  leaseDurationSeconds: 40
+  renewTime: "2023-12-28T13:11:12.237915Z"

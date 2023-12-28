@@ -3,7 +3,7 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: (devel)
-  creationTimestamp: "2023-12-27T09:46:11Z"
+  creationTimestamp: "2023-12-28T06:53:10Z"
   name: caliconodestatuses.crd.projectcalico.org
 spec:
   conversion:

@@ -1,0 +1,13 @@
+apiVersion: coordination.k8s.io/v1
+kind: Lease
+metadata:
+  creationTimestamp: "2023-12-28T06:49:50Z"
+  labels:
+    apiserver.kubernetes.io/identity: kube-apiserver
+    kubernetes.io/hostname: sharmag-k8s-master-lqqpff.englab.juniper.net
+  name: apiserver-ql3bnhyq5l6avpbqude463cbpu
+  namespace: kube-system
+spec:
+  holderIdentity: apiserver-ql3bnhyq5l6avpbqude463cbpu_4d550fad-e4f7-4806-9b1e-55c1bcfec16e
+  leaseDurationSeconds: 3600
+  renewTime: "2023-12-28T13:11:14.231092Z"

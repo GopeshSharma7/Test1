@@ -7,7 +7,7 @@ endpoints:
     ready: true
 kind: EndpointSlice
 metadata:
-  creationTimestamp: "2023-12-27T09:42:47Z"
+  creationTimestamp: "2023-12-28T06:49:51Z"
   labels:
     kubernetes.io/service-name: kubernetes
   name: kubernetes

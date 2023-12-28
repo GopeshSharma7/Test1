@@ -5,7 +5,7 @@ metadata:
     deployment.kubernetes.io/revision: "1"
     meta.helm.sh/release-name: jcnr
     meta.helm.sh/release-namespace: default
-  creationTimestamp: "2023-12-27T09:47:46Z"
+  creationTimestamp: "2023-12-28T06:54:45Z"
   labels:
     app.kubernetes.io/managed-by: Helm
   name: contrail-k8s-deployer

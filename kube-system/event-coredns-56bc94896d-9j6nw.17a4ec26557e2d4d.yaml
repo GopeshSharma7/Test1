@@ -1,0 +1,26 @@
+apiVersion: v1
+count: 1394
+eventTime: null
+firstTimestamp: "2023-12-28T06:50:08Z"
+involvedObject:
+  apiVersion: v1
+  kind: Pod
+  name: coredns-56bc94896d-9j6nw
+  namespace: kube-system
+  resourceVersion: "419"
+  uid: 74c98d5d-3071-4c7f-9e1e-86ba5ff4f82e
+kind: Event
+lastTimestamp: "2023-12-28T13:10:20Z"
+message: 'Nameserver limits were exceeded, some nameservers have been omitted, the
+  applied nameserver line is: 10.84.5.101 172.21.200.60 66.129.233.81'
+metadata:
+  creationTimestamp: "2023-12-28T06:50:08Z"
+  name: coredns-56bc94896d-9j6nw.17a4ec26557e2d4d
+  namespace: kube-system
+reason: DNSConfigForming
+reportingComponent: kubelet
+reportingInstance: sharmag-k8s-master-lqqpff.englab.juniper.net
+source:
+  component: kubelet
+  host: sharmag-k8s-master-lqqpff.englab.juniper.net
+type: Warning
