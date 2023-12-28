@@ -1,5 +1,5 @@
 apiVersion: v1
-count: 5230
+count: 5307
 eventTime: null
 firstTimestamp: "2023-12-27T09:46:34Z"
 involvedObject:
@@ -11,7 +11,7 @@ involvedObject:
   resourceVersion: "417"
   uid: 2a7c1618-0dad-4e02-87e9-211dea179ad7
 kind: Event
-lastTimestamp: "2023-12-28T11:53:06Z"
+lastTimestamp: "2023-12-28T12:13:06Z"
 message: 'Readiness probe failed: Get "http://10.244.100.194:8181/ready": context
   deadline exceeded (Client.Timeout exceeded while awaiting headers)'
 metadata:
