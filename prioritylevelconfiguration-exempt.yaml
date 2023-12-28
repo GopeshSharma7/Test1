@@ -3,7 +3,7 @@ kind: PriorityLevelConfiguration
 metadata:
   annotations:
     apf.kubernetes.io/autoupdate-spec: "true"
-  creationTimestamp: "2023-12-27T09:42:46Z"
+  creationTimestamp: "2023-12-28T06:49:50Z"
   name: exempt
 spec:
   exempt:

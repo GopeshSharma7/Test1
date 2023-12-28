@@ -4,7 +4,7 @@ metadata:
   annotations:
     pv.kubernetes.io/bind-completed: "yes"
     pv.kubernetes.io/bound-by-controller: "yes"
-  creationTimestamp: "2023-12-27T09:47:47Z"
+  creationTimestamp: "2023-12-28T06:54:45Z"
   finalizers:
   - kubernetes.io/pvc-protection
   labels:
@@ -19,4 +19,4 @@ spec:
       storage: 256Mi
   storageClassName: jcnrstorage
   volumeMode: Filesystem
-  volumeName: jcnr-pv-volume-0
+  volumeName: jcnr-pv-volume-2

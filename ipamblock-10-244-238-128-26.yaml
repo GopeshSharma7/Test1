@@ -1,0 +1,155 @@
+apiVersion: crd.projectcalico.org/v1
+kind: IPAMBlock
+metadata:
+  annotations:
+    projectcalico.org/metadata: '{"creationTimestamp":null}'
+  creationTimestamp: "2023-12-28T06:53:29Z"
+  name: 10-244-238-128-26
+spec:
+  affinity: host:sharmag-k8s-dpdk-kubelet1-lqqpff.englab.juniper.net
+  allocations:
+  - 0
+  - 1
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  attributes:
+  - handle_id: ipip-tunnel-addr-sharmag-k8s-dpdk-kubelet1-lqqpff.englab.juniper.net
+    secondary:
+      node: sharmag-k8s-dpdk-kubelet1-lqqpff.englab.juniper.net
+      type: ipipTunnelAddress
+  - handle_id: k8s-pod-network.624da784caf527734cba8c1d850e7fc5925e1932ada9e85509d33ffd313ca295
+    secondary:
+      namespace: kube-system
+      node: sharmag-k8s-dpdk-kubelet1-lqqpff.englab.juniper.net
+      pod: calico-kube-controllers-86f8947565-6qn9c
+      timestamp: 2023-12-28 06:53:40.250804476 +0000 UTC
+  cidr: 10.244.238.128/26
+  deleted: false
+  sequenceNumber: 1703746409584066257
+  sequenceNumberForAllocation:
+    "0": 1703746409584066255
+    "1": 1703746409584066256
+  strictAffinity: false
+  unallocated:
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  - 61
+  - 62
+  - 63

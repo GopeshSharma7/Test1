@@ -3,7 +3,7 @@ kind: DaemonSet
 metadata:
   annotations:
     deprecated.daemonset.template.generation: "1"
-  creationTimestamp: "2023-12-27T09:47:54Z"
+  creationTimestamp: "2023-12-28T06:54:53Z"
   labels:
     app: contrail-vrouter-nodes
   name: contrail-vrouter-nodes
@@ -14,7 +14,7 @@ metadata:
     controller: true
     kind: Vrouter
     name: contrail-vrouter-nodes
-    uid: 5db85b9a-f5d7-4621-a560-f635039c4f4a
+    uid: 77097e4a-df35-4e13-9834-7c5178329817
 spec:
   revisionHistoryLimit: 10
   selector:

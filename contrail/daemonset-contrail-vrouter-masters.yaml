@@ -3,7 +3,7 @@ kind: DaemonSet
 metadata:
   annotations:
     deprecated.daemonset.template.generation: "1"
-  creationTimestamp: "2023-12-27T09:47:54Z"
+  creationTimestamp: "2023-12-28T06:54:53Z"
   labels:
     app: contrail-vrouter-masters
   name: contrail-vrouter-masters
@@ -14,7 +14,7 @@ metadata:
     controller: true
     kind: Vrouter
     name: contrail-vrouter-masters
-    uid: 2c4c58b4-2b69-40da-b02f-d9d990b809e9
+    uid: e1bbd526-e905-4b4b-aa63-9796583526ed
 spec:
   revisionHistoryLimit: 10
   selector:

@@ -7,7 +7,7 @@ metadata:
     deployment.kubernetes.io/revision: "1"
     meta.helm.sh/release-name: jcnr
     meta.helm.sh/release-namespace: default
-  creationTimestamp: "2023-12-27T09:47:46Z"
+  creationTimestamp: "2023-12-28T06:54:45Z"
   labels:
     app: contrail-k8s-deployer
     pod-template-hash: 67c445564f
@@ -19,7 +19,7 @@ metadata:
     controller: true
     kind: Deployment
     name: contrail-k8s-deployer
-    uid: 9bf8c5e1-be50-41c6-b2dd-2cc68bfc500a
+    uid: 4526361c-19f6-4687-be3f-308870c3bab4
 spec:
   replicas: 1
   selector:

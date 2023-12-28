@@ -1,0 +1,161 @@
+apiVersion: crd.projectcalico.org/v1
+kind: IPAMBlock
+metadata:
+  annotations:
+    projectcalico.org/metadata: '{"creationTimestamp":null}'
+  creationTimestamp: "2023-12-28T06:53:27Z"
+  name: 10-244-186-192-26
+spec:
+  affinity: host:sharmag-k8s-master-lqqpff.englab.juniper.net
+  allocations:
+  - 0
+  - 1
+  - 2
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  attributes:
+  - handle_id: ipip-tunnel-addr-sharmag-k8s-master-lqqpff.englab.juniper.net
+    secondary:
+      node: sharmag-k8s-master-lqqpff.englab.juniper.net
+      type: ipipTunnelAddress
+  - handle_id: k8s-pod-network.2f62a4c95b9cc2cef74ff712b2d47ff7795437639e7f37fda7a9d9f8dee9b68d
+    secondary:
+      namespace: kube-system
+      node: sharmag-k8s-master-lqqpff.englab.juniper.net
+      pod: coredns-56bc94896d-9j6nw
+      timestamp: 2023-12-28 06:53:35.638122626 +0000 UTC
+  - handle_id: k8s-pod-network.debaa1a540bdd6c4c23413e150f2105a4da5643551ded0061cc6d33fed89f284
+    secondary:
+      namespace: kube-system
+      node: sharmag-k8s-master-lqqpff.englab.juniper.net
+      pod: coredns-56bc94896d-wcbh5
+      timestamp: 2023-12-28 06:53:37.623993423 +0000 UTC
+  cidr: 10.244.186.192/26
+  deleted: false
+  sequenceNumber: 1703746407418415141
+  sequenceNumberForAllocation:
+    "0": 1703746407418415138
+    "1": 1703746407418415139
+    "2": 1703746407418415140
+  strictAffinity: false
+  unallocated:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  - 61
+  - 62
+  - 63

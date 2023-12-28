@@ -5,7 +5,7 @@ metadata:
     deployment.kubernetes.io/desired-replicas: "2"
     deployment.kubernetes.io/max-replicas: "3"
     deployment.kubernetes.io/revision: "1"
-  creationTimestamp: "2023-12-27T09:43:05Z"
+  creationTimestamp: "2023-12-28T06:50:07Z"
   labels:
     k8s-app: kube-dns
     pod-template-hash: 56bc94896d
@@ -17,7 +17,7 @@ metadata:
     controller: true
     kind: Deployment
     name: coredns
-    uid: c4c2d2a3-928e-4b23-bb8a-abdb3a78d8fc
+    uid: 2aac08e8-05e2-40b7-a830-b99a42bccc5d
 spec:
   replicas: 2
   selector:

@@ -2,11 +2,11 @@ apiVersion: crd.projectcalico.org/v1
 kind: ClusterInformation
 metadata:
   annotations:
-    projectcalico.org/metadata: '{"uid":"460226c3-6d41-46fe-9da2-7ab7e7ab0f9f","creationTimestamp":"2023-12-27T09:46:29Z"}'
-  creationTimestamp: "2023-12-27T09:46:29Z"
+    projectcalico.org/metadata: '{"uid":"e81b6716-2017-4134-80a4-e50d8373be3b","creationTimestamp":"2023-12-28T06:53:27Z"}'
+  creationTimestamp: "2023-12-28T06:53:27Z"
   name: default
 spec:
   calicoVersion: v3.24.5
-  clusterGUID: 091e4ba0128543a4a55e34b8bde522ca
+  clusterGUID: 687adab9920345f78b2f257aca08fa00
   clusterType: k8s,bgp,kubeadm,kdd
   datastoreReady: true

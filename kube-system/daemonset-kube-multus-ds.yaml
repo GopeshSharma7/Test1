@@ -3,7 +3,7 @@ kind: DaemonSet
 metadata:
   annotations:
     deprecated.daemonset.template.generation: "1"
-  creationTimestamp: "2023-12-27T09:47:05Z"
+  creationTimestamp: "2023-12-28T06:54:03Z"
   labels:
     app: multus
     name: multus
