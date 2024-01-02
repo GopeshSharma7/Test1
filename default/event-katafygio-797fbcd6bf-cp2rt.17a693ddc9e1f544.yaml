@@ -1,0 +1,23 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2024-01-02T16:14:49.790374Z"
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T16:14:49Z"
+  name: katafygio-797fbcd6bf-cp2rt.17a693ddc9e1f544
+  namespace: default
+note: Successfully assigned default/katafygio-797fbcd6bf-cp2rt to minikube
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: katafygio-797fbcd6bf-cp2rt
+  namespace: default
+  resourceVersion: "1190860"
+  uid: a23b9c6f-3bfd-4c1f-88eb-67c35b398e16
+reportingController: default-scheduler
+reportingInstance: default-scheduler-minikube
+type: Normal
