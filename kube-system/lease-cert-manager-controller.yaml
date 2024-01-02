@@ -9,4 +9,4 @@ spec:
   holderIdentity: cert-manager-7476c8fcf4-fzmh5-external-cert-manager-controller
   leaseDurationSeconds: 60
   leaseTransitions: 0
-  renewTime: "2024-01-02T16:36:19.789581Z"
+  renewTime: "2024-01-02T16:36:34.814699Z"
