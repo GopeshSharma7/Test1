@@ -1,0 +1,148 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2024-01-02T16:14:49Z"
+  generateName: katafygio-797fbcd6bf-
+  labels:
+    app: katafygio
+    chart: katafygio-0.5.1
+    heritage: Helm
+    pod-template-hash: 797fbcd6bf
+    release: katafygio
+  name: katafygio-797fbcd6bf-cp2rt
+  namespace: default
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: katafygio-797fbcd6bf
+    uid: 2b3fff8c-d2d1-400f-9288-aad18298d091
+  uid: a23b9c6f-3bfd-4c1f-88eb-67c35b398e16
+spec:
+  containers:
+  - args:
+    - --local-dir=/var/lib/katafygio/data
+    - --healthcheck-port=8080
+    - --log-level=info
+    - --log-output=stdout
+    - --resync-interval=300
+    - --exclude-kind=replicasets
+    - --exclude-kind=endpoints
+    - --exclude-kind=events
+    image: sharmag07/katafygio:k1
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /health
+        port: http
+        scheme: HTTP
+      initialDelaySeconds: 60
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 10
+    name: katafygio
+    ports:
+    - containerPort: 8080
+      name: http
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /health
+        port: http
+        scheme: HTTP
+      initialDelaySeconds: 30
+      periodSeconds: 20
+      successThreshold: 1
+      timeoutSeconds: 10
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/lib/katafygio/data
+      name: katafygio-data
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-pzhlm
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: minikube
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 65534
+  serviceAccount: katafygio
+  serviceAccountName: katafygio
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: katafygio-data
+    persistentVolumeClaim:
+      claimName: katafygio
+  - name: kube-api-access-pzhlm
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          expirationSeconds: 3607
+          path: token
+      - configMap:
+          items:
+          - key: ca.crt
+            path: ca.crt
+          name: kube-root-ca.crt
+      - downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+            path: namespace
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2024-01-02T16:14:49Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2024-01-02T16:15:50Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2024-01-02T16:15:50Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2024-01-02T16:14:49Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://559c9fa8c3ecb5c39c0ca337855d1db3edc8b4cef5e2f4e4d94c89c42ec96b1b
+    image: sharmag07/katafygio:k1
+    imageID: docker-pullable://sharmag07/katafygio@sha256:69748b0046215d08603fca616505194032733edbd55a53ee0a0f7e9ee8ed1ebe
+    lastState: {}
+    name: katafygio
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2024-01-02T16:15:02Z"
+  hostIP: 192.168.49.2
+  phase: Running
+  podIP: 10.244.0.114
+  podIPs:
+  - ip: 10.244.0.114
+  qosClass: BestEffort
+  startTime: "2024-01-02T16:14:49Z"
