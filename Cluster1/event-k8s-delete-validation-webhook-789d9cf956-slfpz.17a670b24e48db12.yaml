@@ -1,0 +1,27 @@
+apiVersion: v1
+count: 178
+eventTime: null
+firstTimestamp: "2024-01-02T05:30:20Z"
+involvedObject:
+  apiVersion: v1
+  kind: Pod
+  name: k8s-delete-validation-webhook-789d9cf956-slfpz
+  namespace: default
+  resourceVersion: "864640"
+  uid: b68c7b56-0901-4708-8703-659cd8de4484
+kind: Event
+lastTimestamp: "2024-01-02T16:30:34Z"
+message: 'MountVolume.SetUp failed for volume "ssl-keys" : secret "k8s-delete-validation-webhook-secret"
+  not found'
+metadata:
+  creationTimestamp: "2024-01-02T05:30:26Z"
+  name: k8s-delete-validation-webhook-789d9cf956-slfpz.17a670b24e48db12
+  namespace: default
+  uid: 9daf0510-cdfd-4d90-893f-5bf609369002
+reason: FailedMount
+reportingComponent: ""
+reportingInstance: ""
+source:
+  component: kubelet
+  host: minikube
+type: Warning
