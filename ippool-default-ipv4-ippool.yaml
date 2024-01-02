@@ -2,8 +2,8 @@ apiVersion: crd.projectcalico.org/v1
 kind: IPPool
 metadata:
   annotations:
-    projectcalico.org/metadata: '{"uid":"2480df02-53bd-4060-9206-3299c71b406e","creationTimestamp":"2023-12-28T06:53:27Z"}'
-  creationTimestamp: "2023-12-28T06:53:27Z"
+    projectcalico.org/metadata: '{"uid":"0877d191-a2c8-4aad-9f5f-b2312c905bac","creationTimestamp":"2023-12-27T18:11:27Z"}'
+  creationTimestamp: "2023-12-27T18:11:27Z"
   name: default-ipv4-ippool
 spec:
   allowedUses:
